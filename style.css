@@ -11,6 +11,16 @@
 
 h1 {
     font-family: 'Inter';
+    font-weight: bold;
+    font-size: 42px;
+    color: #1969E2;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 32px;
+    color: #1969E2;
 }
 
 p {
@@ -33,6 +43,21 @@ p {
     font-weight: 700;
 }
 
+.cta-btn {
+    background-color: #19BEE2;
+    border: none ;
+    color: white;
+    font-family: 'Inter';
+    padding: 10px 26px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 
 /* Header */
 header {
@@ -43,5 +68,25 @@ header {
 
 header img {
     width: 25% 
+}
+
+/* Hero container */
+.hero-container {
+    height: 60vh;
+    padding: 40px;
+}
+
+.hero-container h1 {
+    margin-bottom: 30px;
+}
+
+.hero-container p {
+    margin-bottom: 30px;
+}
+
+/* Hvad er FriGo? */
+.frigo-container {
+    background-color: #F1F0F5;
+    padding: 40px;
 }
 
