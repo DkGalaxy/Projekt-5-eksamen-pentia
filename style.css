@@ -128,6 +128,7 @@ header img {
     margin-left: 10px;
 }
 
+
 /* FAQ-sektion */
 .faq-container {
     background-color: #19BEE2;
@@ -144,4 +145,12 @@ header img {
 .kontaktformular-container {
     background-color: #1969E2;
     padding: 40px;
+}
+
+.kontaktformular-container p {
+    color: white;
+}
+
+.kontaktformular-container h3 {
+    margin-bottom: 20px;
 }
