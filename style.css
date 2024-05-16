@@ -23,6 +23,14 @@ h2 {
     color: #1969E2;
 }
 
+h3 {
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+
+}
+
 p {
     font-family: 'Inter';
 }
@@ -88,5 +96,52 @@ header img {
 .frigo-container {
     background-color: #F1F0F5;
     padding: 40px;
+    display: grid;
 }
 
+.frigo-grid-item {
+    margin-bottom: 50px;
+}
+
+.frigo-grid-item h2 {
+    margin-bottom: 20px;
+}
+
+.number-container {
+    margin: 0;
+}
+
+.number-grid-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.big-number {
+    font-family: 'Inter';
+    font-size: 100px;
+    font-weight: 300;
+    color: #1969E2;
+}
+
+.small-text {
+    margin-left: 10px;
+}
+
+/* FAQ-sektion */
+.faq-container {
+    background-color: #19BEE2;
+    padding: 40px;
+}
+
+/* Hvem er vi? */
+.about-us-container {
+    background-color: #F1F0F5;
+    padding: 40px;
+}
+
+/* Kontaktformular */
+.kontaktformular-container {
+    background-color: #1969E2;
+    padding: 40px;
+}
