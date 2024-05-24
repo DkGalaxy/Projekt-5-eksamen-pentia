@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 /* Overskrifter */
 
 h1 {
@@ -107,7 +111,11 @@ header {
 }
 
 header img {
-    width: 25% 
+    width: 80px;
+}
+
+header a {
+    display: inline-block;
 }
 
 /* Navigation */
@@ -143,10 +151,17 @@ nav a:hover {
     text-underline-offset: 7px;
 }
 
+nav a.active {
+    color: #19BEE2;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
 /* Hero container */
 .hero-container {
     height: 60vh;
     padding: 40px;
+    margin-top: 100px;
 }
 
 .hero-container h1 {
