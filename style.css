@@ -11,6 +11,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+
 /* Overskrifter */
 
 h1 {
@@ -41,7 +42,7 @@ p {
 
 /* Knapper */
 .blue-btn {
-    background-color: white;
+    background-color: transparent;
     border: 2px solid #19BEE2;
     color: #19BEE2;
     font-family: 'Inter';
@@ -94,6 +95,18 @@ section {
 .scroll-btn {
     background-color: #19BEE2 !important;
     color: white !important;
+}
+
+.scroll-arrow {
+    display: flex;
+    justify-content: center;
+    animation: bounce 2s infinite;
+    font-size: 75px;
+}
+
+.scroll-arrow a {
+    color: #1969E2;
+    text-decoration: none;
 }
 
 /* Header */
@@ -173,13 +186,14 @@ nav a.active {
 }
 
 .hero-container button {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* Hvad er FriGo? */
 .frigo-container {
     background-color: #F1F0F5;
     padding: 40px;
+    padding-top: 100px;
     display: grid;
 }
 
@@ -237,4 +251,42 @@ nav a.active {
 
 .kontaktformular-container h3 {
     margin-bottom: 20px;
+}
+
+/* Til virksomheder */
+/* Hero - til virksomheder */
+.hero-container-virk {
+    height: 60vh;
+    padding: 40px;
+    padding-top: 100px;
+}
+
+.hero-container-virk h1 {
+    margin-bottom: 30px;
+}
+
+.hero-container-virk p {
+    margin-bottom: 30px;
+}
+
+/* Introduktion til admin */
+.admin-intro-container {
+    background-color: #19BEE2;
+    color: white;
+    padding: 40px;
+}
+
+.admin-intro-container h3 {
+    margin-bottom: 30px;
+}
+
+.admin-intro-container p {
+    margin-bottom: 30px;
+}
+
+/* Slideshow */
+.slideshow-container {
+    width: 100%;
+    background-color: #F1F0F5;
+    padding: 40px;
 }

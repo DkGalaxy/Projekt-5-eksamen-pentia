@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="JavaScript/main.js" defer></script>
-    <title>FriGo | Landingpage</title>
+    <title>FriGo | Til virksomheder</title>
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="arbejdsgiver.html">Til virksomheder</a>
+                    <a href="til-virksomhed.html">Til virksomheder</a>
                     <button id= "scrolledButton" class="blue-btn">Kontakt</button>
                 </li>
             </ul>
@@ -26,10 +26,12 @@
                 <h1>Tid til en forfriskning?</h1>
                 <p>FriGo er den app, du ikke vidste, din arbejdsplads manglede! Har du allerede hørt om FriGo? Så tøv ikke med at tage kontakt nu!</p>
                 <button class="cta-btn">Kontakt</button>
-                <p>Ellers scroll ned for at læse, hvad du reelt går glip af!</p>
-            </div>
+                <div class="scroll-arrow">
+                    <a href="#frigo-section">&#8595;</a>
+                </div>
+            </div>  
         </section>
-        <div class="frigo-container">
+        <div id="frigo-section" class="frigo-container">
             <section class="hidden">
                 <div class="frigo-grid-item">
                     <h2>Hvad er FriGo?</h2>
@@ -57,22 +59,22 @@
                 </section>   
             </div> 
         </div>
-        <section class="hidden">
-            <div class="faq-container">
+        <div class="faq-container">
+            <section class="hidden">
                 <h3>FAQ sektion</h3>
-            </div>
-        </section>
-        <section class="hidden">
-            <div class="about-us-container">
+            </section>
+        </div>
+        <div class="about-us-container">
+            <section class="hidden">
                 <h2>Hvem er vi?</h2>
-            </div>
-        </section>
-        <section class="hidden">
-            <div class="kontaktformular-container">
+            </section>
+        </div>
+        <div class="kontaktformular-container">
+            <section class="hidden">
                 <h3>Hvad venter du på?</h3>
                 <p>Skal din arbejdsplads være med på moden? Så tøv ikke med at tage kontakt!</p>
-            </div>
-        </section> 
+            </section> 
+        </div>
     </main>
     <footer></footer>
 </body>

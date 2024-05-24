@@ -13,7 +13,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el))
 
-//Scroll button
+// Scroll button
 document.addEventListener('DOMContentLoaded', function() {
     const button = document.getElementById('scrolledButton');
 
@@ -26,3 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Scroll arrow
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollArrow = document.querySelector('.scroll-arrow a');
+    scrollArrow.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
