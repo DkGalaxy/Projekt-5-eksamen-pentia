@@ -11,7 +11,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-
 /* Overskrifter */
 
 h1 {
@@ -172,13 +171,15 @@ nav a.active {
 
 /* Hero container */
 .hero-container {
-    height: 60vh;
+    height: 75vh;
     padding: 40px;
+    padding-top: 0;
     margin-top: 100px;
 }
 
 .hero-container h1 {
     margin-bottom: 30px;
+    margin-top: 180px;
 }
 
 .hero-container p {
@@ -189,12 +190,26 @@ nav a.active {
     margin-bottom: 50px;
 }
 
+.hero-container img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    right: 0;
+}
+
 /* Hvad er FriGo? */
 .frigo-container {
     background-color: #F1F0F5;
     padding: 40px;
-    padding-top: 100px;
+    padding-top: 110px;
     display: grid;
+}
+
+.number-container img {
+    width: 200px;
+    height: auto;
 }
 
 .frigo-grid-item {
@@ -205,6 +220,10 @@ nav a.active {
     margin-bottom: 20px;
 }
 
+.frigo-grid-item p {
+    margin-bottom: 20px;
+}
+
 .number-container {
     margin: 0;
 }
@@ -212,7 +231,8 @@ nav a.active {
 .number-grid-item {
     display: flex;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
+    justify-content: center;
 }
 
 .big-number {
@@ -282,7 +302,7 @@ nav a.active {
 
 .error {
     color: red;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 .confirmation {
