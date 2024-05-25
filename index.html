@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="JavaScript/main.js" defer></script>
+    <script src="JavaScript/kontaktformular.js" defer></script>
     <title>FriGo | Til virksomheder</title>
 </head>
 <body>
@@ -73,6 +74,18 @@
             <section class="hidden">
                 <h3>Hvad venter du på?</h3>
                 <p>Skal din arbejdsplads være med på moden? Så tøv ikke med at tage kontakt!</p>
+                <form id="contactForm" onsubmit="return validateForm();">
+                    <input type="text" name="name" id="name" placeholder="Navn" required>
+                    <div id="nameError" class="error"></div>
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+                    <div id="emailError" class="error"></div>
+                    <input type="text" name="workplace" id="workplace" placeholder="Virksomhed (Valgfrit)">
+                    <div id="workplaceError" class="error"></div>
+                    <input type="text" name="message" id="message" placeholder="Besked" required>
+                    <div id="messageError" class="error"></div><br>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="confirmationMessage" style="display: none;">Tak for din besked</div>
             </section> 
         </div>
     </main>
