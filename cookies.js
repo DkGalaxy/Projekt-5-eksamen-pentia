@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let acceptCookie = document.getElementById('accept-cookie');
     let declineCookie = document.getElementById('decline-cookie');
     const cookiesBtn = document.getElementsByClassName('cookie-button-container');
+    const cookiebox = document.getElementById('cookie-alert');
     const frames = 60;
     let opacity = 0;
 
@@ -17,20 +18,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     acceptCookie.addEventListener('click', function() {
-        acceptCookiebtn();
+        if (confirm("Tak fordi du har accepteret cookie"))
+            {
+                cookiebox.style.display = 'none';
+            }
     });
 
     declineCookie.addEventListener('click', function() {
-        if (confirm("Are you sure you want to decline cookies?")) {
-            // Code to handle declining cookies goes here
-            console.log("Cookies declined.");
+        if (confirm("du er ved at decline cookies er du sikker på du vil det?")) 
+        {
+            cookiebox.style.display = 'none';   
+            
+
         }
     });
 
-    function acceptCookiebtn() {
-        // Code to handle accepting cookies goes here
-        console.log("Cookies accepted.");
-    }
+   
 
     window.onload = fadeIn; // Make sure fadeIn is defined before assigning it to window.onload
 });
