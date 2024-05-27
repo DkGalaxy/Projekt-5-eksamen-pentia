@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3259b7cfe6.js" crossorigin="anonymous"></script>
     <script src="JavaScript/main.js" defer></script>
+    <script src="JavaScript/kontaktformular.js" defer></script>
+    <script src="JavaScript/scroll-animation.js" defer></script>
     <title>FriGo | Landingpage</title>
 </head>
 <body>
@@ -14,7 +17,7 @@
             <ul>
                 <li>
                     <a href="til-virksomhed.html" class="active">Til virksomheder</a>
-                    <button id= "scrolledButton" class="blue-btn">Kontakt</button>
+                    <button id= "scrolledButton" class="blue-btn" onclick="location.href='#contactFormSection'">Kontakt</button>
                 </li>
             </ul>
         </nav>
@@ -22,8 +25,8 @@
     <main>
         <section class="hidden">
             <div class="hero-container-virk">
-                <h1>Har vi fanget din interesse?</h1>
-                <p>Lyder FriGo som en god løsning til netop jeres virksomhed? Så læs mere herunder, hvordan den fungerer for dig, som arbejdsgiver!</p>
+                <h1>Har vi fanget din <span class="break"> interesse?</span></h1>
+                <p>Lyder FriGo som en god løsning til netop jeres <span class="break"> virksomhed? Så læs mere herunder, hvordan den </span><span class="break"> fungerer for dig, som arbejdsgiver!</span></p>
             </div>
         </section>
         <div class="admin-intro-container">
@@ -39,8 +42,63 @@
 
             </section>
         </div>
+        <div class="kontaktformular-container">
+            <section class="hidden" id="contactFormSection">
+                <h3>Hvad venter du på?</h3>
+                <p>Skal din arbejdsplads være med på moden? Så tøv ikke med at tage kontakt og få FriGo!</p>
+                <form id="contactForm" onsubmit="return validateForm();">
+                    <div class="input-container">
+                        <div class="input-grid-item">
+                            <input type="text" name="name" id="name" placeholder="Fulde navn">
+                            <span id="nameError" class="error"></span>
+                        </div>
+                        <div class="input-grid-item">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <span id="emailError" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="workplace" id="workplace" placeholder="Virksomhed (Valgfrit)">
+                        <span id="workplaceError" class="error"></span>
+                    </div>
+                    <div class="input-container">
+                        <div class="input-grid-item">
+                            <input type="text" name="message" id="message" placeholder="Besked">
+                            <span id="messageError" class="error"></span><br>
+                        </div>
+                    </div>
+
+                    <button type="submit">Send</button>
+                </form>
+                <div id="confirmationMessage" class="confirmation-message">
+                    <h2>Tusind tak!</h2>
+                    <p>Vi kunne alligevel godt friste dig! Du hører fra os hurtigst muligt!</p>
+                    <button onclick="closeConfirmationMessage()">Luk</button>
+                </div>
+            </section> 
+        </div>
     </main>
     <footer>
-
+        <div class="footer-items">
+            <p>Seebladsgade 1, 5000 Odense C</p>
+            <p>CVR: 1234567890</p>
+        </div>
+        <div class="footer-items">
+            <div class="sociale-medier">
+                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </div>
+            <div class="sociale-medier">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </div>
+            <div class="sociale-medier">
+                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+            </div>
+            <div class="sociale-medier">
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="footer-items">
+            <p>Copyright &copy; 2024 FriGo</p>
+        </div>
     </footer>
 </body>

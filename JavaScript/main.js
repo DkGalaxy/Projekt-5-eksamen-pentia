@@ -1,17 +1,3 @@
-// Scroll animation
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show')
-        }
-    });
-});
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el))
 
 // Scroll button
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,3 +25,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// Accordion 
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+  
+    accordionItems.forEach(item => {
+      const btn = item.querySelector('.accordion-btn');
+      const content = item.querySelector('.accordion-content');
+      const chevron = item.querySelector('.chevron');
+  
+      btn.addEventListener('click', function() {
+        accordionItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.querySelector('.accordion-btn').classList.remove('active');
+            otherItem.querySelector('.accordion-content').style.display = 'none';
+            otherItem.querySelector('.chevron').classList.remove('rotate');
+          }
+        });
+  
+        btn.classList.toggle('active');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        chevron.classList.toggle('rotate');
+      });
+    });
+  });
+  
