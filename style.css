@@ -437,6 +437,8 @@ nav a.active {
     .faq-container {
         padding: 80px;
     }
+
+
 }
 
 
@@ -444,6 +446,25 @@ nav a.active {
 .about-us-container {
     background-color: #F1F0F5;
     padding: 40px;
+}
+
+.about-us-container h2 {
+    margin-bottom: 30px;
+}
+
+.about-us-container p {
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .about-us-container {
+        padding: 80px;
+    }
+
+    .about-us-container p {
+        columns: 2;
+    }
+
 }
 
 /* Kontaktformular */
