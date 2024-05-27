@@ -110,12 +110,6 @@ button[type="submit"] {
     display: block;
 }
 
-@media screen and (min-width: 768px) {
-    .blue-btn {
-        font-size: 22px;
-    }
-
-}
 
 /* Scroll effekter */
 section {
@@ -152,9 +146,6 @@ section {
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-
-}
 
 /* Header */
 header {
@@ -223,11 +214,6 @@ nav a.active {
     text-underline-offset: 7px;
 }
 
-@media screen and (min-width: 768px) {
-    nav a {
-        font-size: 22px;
-    }
-}
 
 /* Hero container */
 .hero-container {
@@ -345,6 +331,7 @@ nav a.active {
         grid-gap: 20px;
         padding: 80px;
         padding-top: 0;
+        align-items: center;
     }
 
     .number-container img {
@@ -390,6 +377,7 @@ nav a.active {
     background-color: #1969E2;
     padding: 40px;
     padding-top: 110px;
+    padding-bottom: 110px;
 }
 
 .kontaktformular-container p {
