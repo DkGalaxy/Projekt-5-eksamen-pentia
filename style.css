@@ -21,6 +21,10 @@ body {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Overskrifter */
 
 h1 {
@@ -55,6 +59,10 @@ p {
     }
 
     h2 {
+        font-size: 54px;
+    }
+
+    h3 {
         font-size: 54px;
     }
 
@@ -95,6 +103,18 @@ p {
     border-radius: 4px;
     font-size: 16px;
     font-weight: 700;
+}
+
+button[type="submit"] {
+    margin: 0 auto;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .blue-btn {
+        font-size: 22px;
+    }
+
 }
 
 /* Scroll effekter */
@@ -203,6 +223,12 @@ nav a.active {
     text-underline-offset: 7px;
 }
 
+@media screen and (min-width: 768px) {
+    nav a {
+        font-size: 22px;
+    }
+}
+
 /* Hero container */
 .hero-container {
     height: 75vh;
@@ -277,6 +303,9 @@ nav a.active {
 
 .number-container {
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
 }
 
 .number-grid-item {
@@ -309,6 +338,39 @@ nav a.active {
     .frigo-grid-item p {
         text-align: center;
     }
+
+    .number-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 80px;
+        padding-top: 0;
+    }
+
+    .number-container img {
+        width: 400px;
+    }
+
+
+
+    .number-grid-item.text1 {
+        grid-area: text1;
+    }
+    .number-grid-item.img1 {
+        grid-area: img1;
+    }
+    .number-grid-item.text2 {
+        grid-area: text2;
+    }
+    .number-grid-item.img2 {
+        grid-area: img2;
+    }
+    .number-grid-item.text3 {
+        grid-area: text3;
+    }
+    .number-grid-item.img3 {
+        grid-area: img3;
+    }
 }
 
 /* FAQ-sektion */
@@ -327,6 +389,7 @@ nav a.active {
 .kontaktformular-container {
     background-color: #1969E2;
     padding: 40px;
+    padding-top: 110px;
 }
 
 .kontaktformular-container p {
@@ -346,6 +409,7 @@ nav a.active {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
     border: none;
     border-radius: 4px;
     font-family: 'Inter';
@@ -353,7 +417,7 @@ nav a.active {
 }
 
 .kontaktformular-container button {
-    padding: 10px 20px;
+    padding: 10px 50px;
     background-color: #19BEE2;
     color: white;
     border: none;
@@ -362,15 +426,105 @@ nav a.active {
     font-family: 'Inter';
     font-size: 16px;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .error {
-    color: red;
+    color: #F6B2B2;
     font-size: 14px;
 }
 
-.confirmation {
-    color: green;
+.confirmation-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    z-index: 1000;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+}
+
+.confirmation-message p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.input-container .error {
+    margin-top: 5px;
+    color: #F6B2B2;
+}
+
+@media screen and (min-width: 768px) {
+    .kontaktformular-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .input-container {
+        flex-direction: row;
+    }
+
+    .input-container input {
+        margin-right: 10px;
+    }
+
+    .input-grid-item {
+        margin-right: 10px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+footer {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .footer-items {
+    margin: 10px;
+}
+
+footer .sociale-medier {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #1969E2;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    line-height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    footer p {
+        font-size: 16px;
+    }
 }
 
 /* Til virksomheder */
@@ -379,6 +533,9 @@ nav a.active {
     height: 60vh;
     padding: 40px;
     padding-top: 100px;
+    display: grid;
+    align-items: center;
+    align-content: center;
 }
 
 .hero-container-virk h1 {
@@ -389,11 +546,20 @@ nav a.active {
     margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-container-virk {
+        padding: 80px;
+        padding-top: 140px;
+    }
+
+}
+
 /* Introduktion til admin */
 .admin-intro-container {
     background-color: #19BEE2;
     color: white;
     padding: 40px;
+ 
 }
 
 .admin-intro-container h3 {
@@ -402,6 +568,15 @@ nav a.active {
 
 .admin-intro-container p {
     margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .admin-intro-container {
+        padding: 80px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 /* Slideshow */
