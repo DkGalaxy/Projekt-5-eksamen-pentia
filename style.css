@@ -55,13 +55,6 @@ h4 {
     color: white;
 }
 
-h5 {
-    font-family: 'Inter';
-    font-weight: bold;
-    font-size: 32px;
-    color: white;
-}
-
 p {
     font-family: 'Inter';
 }
@@ -118,6 +111,13 @@ p {
     font-weight: 700;
 }
 
+.cta-btn:hover {
+    background-color: transparent;
+    color: #1969E2;
+    border: #1969E2;
+    border-style: solid;
+}
+
 button[type="submit"] {
     margin: 0 auto;
     display: block;
@@ -150,7 +150,6 @@ section {
 .scroll-arrow {
     display: flex;
     justify-content: center;
-    animation: bounce 2s infinite;
     font-size: 75px;
 }
 
@@ -462,9 +461,14 @@ nav a.active {
         padding: 80px;
     }
 
-
+    .accordion-btn {
+        padding-left: 80px;
+        font-size: 32px;
+        padding-right: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
-
 
 /* Hvem er vi? */
 .about-us-container {
@@ -534,6 +538,11 @@ nav a.active {
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
+}
+
+.kontaktformular-container button:hover {
+    background-color: white;
+    color: #1969E2;
 }
 
 .error {
