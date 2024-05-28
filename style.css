@@ -728,6 +728,25 @@ footer .sociale-medier {
         padding-left: 20px;
         
     }
+    .slide-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .indicator {
+        width: 15px;
+        height: 15px;
+        background-color: grey;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .indicator.active {
+        background-color: blue;
+    }
     
 @media screen and (min-width: 768px) {
     .computerskærm-img{
