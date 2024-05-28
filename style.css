@@ -249,7 +249,7 @@ nav a.active {
 }
 
 .hero-container img {
-    width: 200px;
+    width: 275px;
     height: auto;
     position: absolute;
     object-fit: cover;
@@ -269,7 +269,7 @@ nav a.active {
     }
 
     .hero-container img {
-        width: 450px;
+        width: 600px;
         right: 80px;
     }
 }
@@ -459,6 +459,10 @@ nav a.active {
 @media screen and (min-width: 768px) {
     .faq-container {
         padding: 80px;
+    }
+
+    .accordion-content {
+        padding: 0px 40px;
     }
 
     .accordion-btn {
