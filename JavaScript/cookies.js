@@ -6,6 +6,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const frames = 60;
     let opacity = 0;
 
+    const acceptCookieMessage =
+    [
+        "tak for at accepterer cookies!",
+        "Vi sætter pris på din samtykke",
+        "din samtykke hjælper at forbedre din oplevelse",
+        "tak for at bruge cookies"
+    ];
+    const declineCookieMessage =
+    [
+        "er du sikker på du gerne vil decline cookies!",
+        "decline cookies har måske en effekt på din oplevelse",
+        "har du virkelig lyst til at decline cookies",
+        "du har valgt at fravælge cookies"
+    ];
+
     function fadeIn() {
         for (let i = 0; i <= frames; i++) {
             setTimeout(() => {
@@ -16,16 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
             }, i * 30);
         }
     }
-
+    function getRandomMessage(arr) {
+        return arr[Math.floor(Math.random()* arr.length)];
+    }
     acceptCookie.addEventListener('click', function() {
-        if (confirm("Tak fordi du har accepteret cookie"))
+        if (confirm(getRandomMessage(acceptCookieMessage)))
             {
                 cookiebox.style.display = 'none';
             }
     });
 
     declineCookie.addEventListener('click', function() {
-        if (confirm("du er ved at decline cookies er du sikker på du vil det?")) 
+        if (confirm(getRandomMessage(declineCookieMessage))) 
         {
             cookiebox.style.display = 'none';   
             
