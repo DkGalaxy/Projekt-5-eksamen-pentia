@@ -8,17 +8,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const acceptCookieMessage =
     [
-        "tak for at accepterer cookies!",
-        "Vi sætter pris på din samtykke",
-        "din samtykke hjælper at forbedre din oplevelse",
-        "tak for at bruge cookies"
+        "Tak for at accepterer cookies!",
+        "Vi sætter pris på din samtykke!",
+        "Dit samtykke hjælper med at forbedre din oplevelse!",
+        "Dejligt, at du også har lyst til cookies!"
     ];
     const declineCookieMessage =
     [
-        "er du sikker på du gerne vil decline cookies!",
-        "decline cookies har måske en effekt på din oplevelse",
-        "har du virkelig lyst til at decline cookies",
-        "du har valgt at fravælge cookies"
+        "Er du sikker på du gerne vil takke nej til cookies?",
+        "At takke nej til cookies har måske en effekt på din oplevelse.",
+        "Har du virkelig ikke lyst til cookies?",
+        "Du har fravalgt cookies!"
     ];
 
     function fadeIn() {
