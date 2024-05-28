@@ -10,17 +10,17 @@ const indicators = document.querySelectorAll('.indicator');
 const slides = [
     {
         image: 'images/computer1.png',
-        text: 'FriGo til admins er med sit simple<br> design godt til at ...',
-        h1Text: 'Adminprogram '
+        text: 'FriGo til admins er med sit simple design godt <span class="break"> til at holde overblikket over medarbejderne, køleskabet og det tekniske.</span>',
+        h1Text: 'Adminprogram til FriGo'
     },
     {
         image: 'images/computer-2.png',
-        text: 'Med frigos admintrastive forside<br> kan du hurtigt finde overblik over dine medarbejders indkøb',
-        h1Text: 'Indkløbs overblik'
+        text: 'Med FriGos adminstrative forside kan du hurtigt <span class="break"> finde overblik over dine medarbejdere og deres indkøb.</span>',
+        h1Text: 'Overblik over medarbejdere'
     },
     {
         image: 'images/computer-3.png',
-        text: 'Gennem frigos kan hurtigt ændres på priser<br> og udbudet af snacks og drikkevare i køleskabet<br> så dine medarbejdere kan få sig en kold drikke',
+        text: 'Gennem FriGo kan hurtigt ændre på priser og udbuddet af <span class="break"> snacks og drikkevarer i køleskabet, så dine medarbejdere kan få sig noget koldt drikke!</span>',
         h1Text: 'Sortiment opsætning'
     }
 ];
