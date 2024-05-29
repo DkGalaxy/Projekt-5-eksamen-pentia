@@ -749,13 +749,8 @@ footer .sociale-medier {
     width: 100%;   
 }
 
-.fa-3x {
-    size: 1em;
-}
-
-.fa{
+.fa {
     color:#1969E2;
-    size: 1em;
     padding-right: 20px;
     padding-left: 20px;    
     }
@@ -808,10 +803,6 @@ footer .sociale-medier {
         width: 100%;
         padding-right: 200px;
     }
-
-    .fa-3x{
-        size: 1em!important;
-        }
 }
 
 
